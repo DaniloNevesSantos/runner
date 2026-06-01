@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://gdlj4puwd7dk"]
+
+[ext_resource type="Texture2D" uid="uid://dl4btxuj3h04o" path="res://mockup.png" id="1_kxg5b"]
+
+[node name="Jogo" type="Node2D" unique_id=737877219]
+
+[node name="fundo" type="Sprite2D" parent="." unique_id=1774340927]
+position = Vector2(582.25006, 321.50003)
+scale = Vector2(0.44902346, 0.43819442)
+texture = ExtResource("1_kxg5b")
