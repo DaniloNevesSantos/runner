@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://bv702wh34sym0"]
+
+[ext_resource type="Script" uid="uid://ddlnoluv0q6di" path="res://item.gd" id="1_s37gr"]
+[ext_resource type="Texture2D" uid="uid://b2tcgwai5wgbt" path="res://cena/enemies.png" id="2_5clpt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fg2x0"]
+atlas = ExtResource("2_5clpt")
+region = Rect2(0, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kcyqy"]
+atlas = ExtResource("2_5clpt")
+region = Rect2(48, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5pjd6"]
+atlas = ExtResource("2_5clpt")
+region = Rect2(96, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_euf58"]
+atlas = ExtResource("2_5clpt")
+region = Rect2(0, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_td5gx"]
+atlas = ExtResource("2_5clpt")
+region = Rect2(48, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mufrf"]
+atlas = ExtResource("2_5clpt")
+region = Rect2(96, 0, 48, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lykyj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fg2x0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kcyqy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5pjd6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_euf58")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_td5gx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mufrf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s37gr"]
+size = Vector2(53, 32)
+
+[node name="Item" type="Area2D" unique_id=2009569649]
+position = Vector2(1150, 362)
+script = ExtResource("1_s37gr")
+
+[node name="Animação" type="AnimatedSprite2D" parent="." unique_id=1352395252]
+texture_filter = 1
+position = Vector2(90.666626, 62.833344)
+scale = Vector2(1.9861108, 1.9895833)
+sprite_frames = SubResource("SpriteFrames_lykyj")
+frame_progress = 0.66345614
+
+[node name="CorpoAnimação" type="CollisionShape2D" parent="." unique_id=1249195122]
+position = Vector2(93.166626, 77.83334)
+shape = SubResource("RectangleShape2D_s37gr")

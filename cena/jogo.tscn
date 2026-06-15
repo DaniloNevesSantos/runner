@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://3etsybdh0a4u" path="res://cena/middleground1.png" id="5_k2165"]
 [ext_resource type="Script" uid="uid://d3opdbfjoc5pd" path="res://cena/jogador.gd" id="6_3vra5"]
 [ext_resource type="Texture2D" uid="uid://bkr7m2nfgy1id" path="res://cena/player.png" id="7_dqc8a"]
+[ext_resource type="Script" uid="uid://dga3hngr41ysa" path="res://cena/gerador_obstaculos.gd" id="8_dqc8a"]
+[ext_resource type="Script" uid="uid://bvrld6tnt7yrk" path="res://cena/gerador_itens.gd" id="9_k2165"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k2165"]
 size = Vector2(319.88037, 30.181808)
@@ -81,7 +83,7 @@ script = ExtResource("1_4bcru")
 
 [node name="Fundo" type="Sprite2D" parent="." unique_id=1774340927]
 texture_filter = 1
-position = Vector2(-1.0000019, 1.0000038)
+position = Vector2(1.9999979, 1.0000038)
 scale = Vector2(3.603125, 3.5777776)
 texture = ExtResource("2_3118s")
 centered = false
@@ -95,7 +97,7 @@ centered = false
 
 [node name="Chao" type="Sprite2D" parent="." unique_id=1905196955]
 texture_filter = 1
-position = Vector2(1159, 520)
+position = Vector2(1152, 520)
 scale = Vector2(3.65625, 3.6666665)
 texture = ExtResource("3_3vra5")
 centered = false
@@ -127,7 +129,7 @@ centered = false
 
 [node name="MeioAzul2" type="Sprite2D" parent="." unique_id=1178800518]
 texture_filter = 1
-position = Vector2(1157.0001, 1)
+position = Vector2(1150.0001, 1)
 scale = Vector2(3.6718748, 3.216667)
 texture = ExtResource("4_dqc8a")
 centered = false
@@ -141,7 +143,7 @@ centered = false
 
 [node name="MeioPreto2" type="Sprite2D" parent="." unique_id=69338450]
 texture_filter = 1
-position = Vector2(1164, -0.9999995)
+position = Vector2(1157, -0.9999995)
 scale = Vector2(3.65625, 3.25)
 texture = ExtResource("5_k2165")
 centered = false
@@ -164,3 +166,9 @@ position = Vector2(-246.1539, 152.18182)
 scale = Vector2(0.99999994, 1)
 sprite_frames = SubResource("SpriteFrames_jr4ny")
 animation = &"pular"
+
+[node name="GeradorObstaculos" type="Node2D" parent="." unique_id=330810139]
+script = ExtResource("8_dqc8a")
+
+[node name="GeradorItens" type="Node2D" parent="." unique_id=1497088120]
+script = ExtResource("9_k2165")
