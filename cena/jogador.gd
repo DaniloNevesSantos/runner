@@ -1,5 +1,6 @@
 extends CharacterBody2D
-
+var vidas = 5
+var pontos = 0
 var velocidade_pulo = -600
 func _physics_process(delta: float) -> void:
 	velocity += get_gravity()*delta

@@ -9,3 +9,6 @@ func _process(delta: float) -> void:
 	if $".".position.x < -1152:
 		$".".position.x = 1152
 		$".".position.x -= velocidade*delta*2
+func _on_body_enterend(body: Node2D) -> void:
+	body.pontos += 1
+	queue_free()

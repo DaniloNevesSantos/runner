@@ -57,15 +57,16 @@ animations = [{
 size = Vector2(53, 32)
 
 [node name="Item" type="Area2D" unique_id=2009569649]
-position = Vector2(1150, 362)
+position = Vector2(1168, 330)
 script = ExtResource("1_s37gr")
 
 [node name="Animação" type="AnimatedSprite2D" parent="." unique_id=1352395252]
 texture_filter = 1
-position = Vector2(90.666626, 62.833344)
+position = Vector2(95, 60)
 scale = Vector2(1.9861108, 1.9895833)
 sprite_frames = SubResource("SpriteFrames_lykyj")
-frame_progress = 0.66345614
+autoplay = "default"
+frame_progress = 0.0674684
 
 [node name="CorpoAnimação" type="CollisionShape2D" parent="." unique_id=1249195122]
 position = Vector2(93.166626, 77.83334)

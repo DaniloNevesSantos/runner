@@ -1,7 +1,5 @@
-res://cena/jogo.tscn
-res://cena/gerador_obstaculos.gd
-res://obstaculo.gd
-res://cena/obstaculo.tscn
-res://cena/gerador_itens.gd
 res://item.gd
+res://cena/gerador_itens.gd
 res://cena/item.tscn
+res://cena/jogador.gd
+res://obstaculo.gd
