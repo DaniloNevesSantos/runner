@@ -1,10 +1,15 @@
 extends Node2D
+var timer = 0.0
 
+
+	
 @export var velocidade: int
 func _ready() -> void:
 	velocidade = 400
 	
 func _process(delta: float) -> void:
+	
+	
 	
 	$Fundo.position.x -= velocidade*delta
 	$Fundo2.position.x -= velocidade*delta
@@ -44,3 +49,6 @@ func _process(delta: float) -> void:
 	$MeioAzul2.position.x -= velocidade*delta*0.05
 	$MeioPreto.position.x -= velocidade*delta*2
 	$MeioPreto2.position.x -= velocidade*delta*2
+	
+	func _process(delta: float) -> void:
+	$HBoxContainer/vidas.text = "vidas: " + str(int)

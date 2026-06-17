@@ -1,5 +1,8 @@
-res://item.gd
 res://cena/gerador_itens.gd
 res://cena/item.tscn
-res://cena/jogador.gd
+res://item.gd
 res://obstaculo.gd
+res://cena/obstaculo.tscn
+res://cena/jogador.gd
+res://cena/jogo.tscn
+res://cena/jogo.gd

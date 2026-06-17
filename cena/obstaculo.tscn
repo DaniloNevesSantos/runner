@@ -4,9 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://hj52gisgucgo" path="res://cena/thorn.png" id="2_uok3k"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ivw4x"]
-size = Vector2(91, 27)
+size = Vector2(93.5, 30.5)
 
-[node name="Obstaculo" type="Area2D" unique_id=483363050]
+[node name="Obstaculo" type="Area2D" unique_id=483363050 groups=["danos"]]
 position = Vector2(1133, 346)
 script = ExtResource("1_mblov")
 
@@ -17,5 +17,5 @@ scale = Vector2(6, 6.0625)
 texture = ExtResource("2_uok3k")
 
 [node name="CorpoObstaculo" type="CollisionShape2D" parent="." unique_id=452696240]
-position = Vector2(223, 222)
+position = Vector2(221.75, 220.25)
 shape = SubResource("RectangleShape2D_ivw4x")

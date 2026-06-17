@@ -86,13 +86,8 @@ size = Vector2(57, 81)
 font = ExtResource("10_pht44")
 font_size = 28
 
-[sub_resource type="LabelSettings" id="LabelSettings_pht44"]
-font = ExtResource("10_pht44")
-font_size = 28
-
 [node name="Jogo" type="Node2D" unique_id=737877219]
 script = ExtResource("1_4bcru")
-velocidade = null
 
 [node name="Fundo" type="Sprite2D" parent="." unique_id=1774340927]
 texture_filter = 1
@@ -197,23 +192,16 @@ script = ExtResource("8_dqc8a")
 script = ExtResource("9_k2165")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1603211095]
-offset_left = -3.0
+offset_left = 469.0006
 offset_top = 10.499981
-offset_right = 1152.0
+offset_right = 571.0
 offset_bottom = 59.0
 alignment = 1
 
-[node name="tempo" type="Label" parent="HBoxContainer" unique_id=2008338394]
+[node name="LabelTimer" type="Label" parent="HBoxContainer" unique_id=2008338394]
 texture_filter = 1
 layout_mode = 2
-text = "tempo: 0                       "
+text = "pontos: 0"
 label_settings = SubResource("LabelSettings_h51q6")
-
-[node name="vidas" type="Label" parent="HBoxContainer" unique_id=1148983936]
-texture_filter = 1
-layout_mode = 2
-text = "Vidas: 5"
-label_settings = SubResource("LabelSettings_pht44")
-horizontal_alignment = 1
 
 [connection signal="area_entered" from="Jogador/area" to="Jogador" method="_on_area_2d_area_entered"]

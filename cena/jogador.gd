@@ -11,3 +11,11 @@ func _physics_process(delta: float) -> void:
 	else:
 		$Imagem.play("pular")
 	move_and_slide()
+
+
+func _on_area_2d_area_entered(area):
+	if area.is_in_group("danos"):
+		vidas -= 1
+	if vidas <= 0:
+		get_tree().paused = true
+		
