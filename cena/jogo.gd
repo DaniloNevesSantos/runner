@@ -1,5 +1,5 @@
 extends Node2D
-var timer = 0.0
+var pontos = 0
 
 
 	
@@ -8,8 +8,9 @@ func _ready() -> void:
 	velocidade = 400
 	
 func _process(delta: float) -> void:
-	
-	
+	pontos += delta * 2
+	$status/pontos.text = "pontos: " + str(int($Jogador.pontos))
+	$status/vidas.text = "vidas: " + str($Jogador.vidas)
 	
 	$Fundo.position.x -= velocidade*delta
 	$Fundo2.position.x -= velocidade*delta
@@ -50,5 +51,5 @@ func _process(delta: float) -> void:
 	$MeioPreto.position.x -= velocidade*delta*2
 	$MeioPreto2.position.x -= velocidade*delta*2
 	
-	func _process(delta: float) -> void:
-	$HBoxContainer/vidas.text = "vidas: " + str(int)
+	
+	
